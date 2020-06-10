@@ -1,0 +1,75 @@
+{
+  "name": "backend-api-starter",
+  "version": "1.0.0",
+  "description": "Backend API starter structure",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubengomex/backend-api-starter.git"
+  },
+  "keywords": [
+    "api",
+    "docs",
+    "stripe",
+    "sockets",
+    "redis",
+    "sendgrid",
+    "sentry",
+    "postgres",
+    "prettier",
+    "eslint",
+    "tdd",
+    "auth",
+    "jwt",
+    "validation"
+  ],
+  "author": "Rúben Gomes <gomesruben21@gmail.com> (https://rubengomex.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubengomex/backend-api-starter/issues"
+  },
+  "homepage": "https://github.com/rubengomex/backend-api-starter#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@sentry/node": "^5.17.0",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "find": "^0.3.0",
+    "generate-password": "^1.5.1",
+    "helmet": "^3.22.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.18",
+    "multer": "^1.4.2",
+    "redis": "^3.0.2",
+    "response-time": "^2.3.2",
+    "sendgrid": "^5.2.3",
+    "socket.io": "^2.3.0",
+    "socket.io-redis": "^5.3.0",
+    "socketio-jwt": "^4.6.2",
+    "validator": "^13.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "morgan": "~1.9.1",
+    "nodemon": "~2.0.2",
+    "prettier": "^2.0.2"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  }
+}
