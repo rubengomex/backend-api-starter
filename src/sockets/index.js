@@ -1,6 +1,5 @@
 const { onConnect, onDisconnect } = require('./handlers/session')
 const { onSignal } = require('./handlers/signal')
-const { onUserInvite, onUserStatus } = require('./handlers/user')
 
 exports.initialize = io => {
   io.sockets.on('connection', socket => {

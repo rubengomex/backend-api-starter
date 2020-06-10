@@ -15,6 +15,7 @@ const bodyParser = require('body-parser')
 const socketIO = require('socket.io')
 const redis = require('socket.io-redis')
 const ioAuth = require('socketio-jwt')
+const cookieParser = require('cookie-parser')
 const { notFoundHandler, genericErrorHandler, terminate } = require('./middlewares/errors')
 const { initializeCors } = require('./middlewares/cors')
 const database = require('./database')
@@ -71,6 +72,8 @@ exports.start = async () => {
 
     await database.initialize()
     console.log('%s Connected to database %s', chalk.green('✓'), '🚀')
+    require('./cron_jobs').initialize()
+    console.log('%s Cron jobs attached successfully %s', chalk.green('✓'), '🚀')
 
     await util.promisify(server.listen).bind(server)(port)
     console.log('%s App running at %d in %s mode %s', chalk.green('✓'), port, env, '🚀')
